@@ -10,24 +10,14 @@ const Contact = () => {
       content: "support@kastolachocolate.com",
       link: "mailto:support@kastolachocolate.com"
     },
-    {
-      icon: <FaPhone />,
-      title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
-    },
-    {
-      icon: <FaMapMarkerAlt />,
-      title: "Address",
-      content: "123 Chocolate Avenue, Sweet City, SC 12345",
-      link: "#"
-    }
+  
+    
   ];
 
   const socialMedia = [
-    { icon: <FaInstagram />, name: "Instagram", link: "#" },
-    { icon: <FaFacebook />, name: "Facebook", link: "#" },
-    { icon: <FaTwitter />, name: "Twitter", link: "#" }
+    { icon: <FaInstagram />, name: "Instagram", link:' https://www.instagram.com/kastola_chocolate?utm_source=qr&igsh=dXExd2hkbm5yZjQ4' },
+    { icon: <FaFacebook />, name: "Facebook", link: "https://www.facebook.com/share/1EqcnzWkoq/" },
+    
   ];
 
   return (
