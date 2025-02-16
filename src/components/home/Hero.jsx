@@ -11,11 +11,12 @@ function Hero() {
         {/* Main background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center" 
-          style={{ backgroundImage: `url('/images/chocolate-bg.jpg')` }}
+          style={{ backgroundImage: `url('/images/wheat.jpg')` }}
         />
         
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brown-950/90 via-brown-900/85 to-brown-800/80" />
+        {/* Gradient overlay - adjusted for better visibility with your image */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-brown-900/60 to-brown-800/20" />
+       
       </div>
 
       {/* Content */}
@@ -51,9 +52,9 @@ function Hero() {
         </motion.div>
       </div>
 
-      {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brown-950 to-transparent z-10" />
-      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-brown-950 to-transparent z-10" />
+      {/* Enhanced decorative elements for better transition with your image */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-brown-950 to-transparent z-10" />
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-brown-950 to-transparent z-10" />
     </section>
   );
 }

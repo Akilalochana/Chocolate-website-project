@@ -12,11 +12,11 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-brown-950/90 backdrop-blur-sm">
+    <nav className="fixed w-full z-50 bg-gradient-to-r from-amber-950/95 via-brown-900/95 to-amber-950/95 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="#home" className="text-2xl font-bold text-white">
+          <a href="#home" className="text-2xl font-bold text-amber-100">
             Kastola
           </a>
 
@@ -26,12 +26,12 @@ function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white hover:text-brown-100 transition-colors"
+                className="text-amber-100 hover:text-amber-300 transition-colors"
               >
                 {item.label}
               </a>
             ))}
-            <button className="bg-brown-100 text-brown-900 px-6 py-2 rounded-full hover:bg-white transition-colors">
+            <button className="bg-amber-100 text-amber-950 px-6 py-2 rounded-full hover:bg-amber-200 transition-colors">
               <FaShoppingCart className="inline-block mr-2" />
               Cart (0)
             </button>
@@ -39,7 +39,7 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-amber-100"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -54,14 +54,14 @@ function Navbar() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block px-3 py-2 text-white hover:bg-brown-800 rounded-md"
+                  className="block px-3 py-2 text-amber-100 hover:bg-amber-900/50 rounded-md"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
               <button 
-                className="w-full text-left px-3 py-2 text-white hover:bg-brown-800 rounded-md"
+                className="w-full text-left px-3 py-2 text-amber-100 hover:bg-amber-900/50 rounded-md"
                 onClick={() => setIsOpen(false)}
               >
                 <FaShoppingCart className="inline-block mr-2" />
