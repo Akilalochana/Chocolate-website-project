@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brown-50: #fdf8f6;
+  --brown-100: #f2e8e5;
+  --brown-600: #7c2d12;
+  --brown-700: #63200d;
+  --brown-800: #4c1d09;
+  --brown-900: #27150c;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-brown-50 text-brown-900;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center px-6 py-3 rounded-full font-semibold transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-brown-900 text-white hover:bg-brown-800;
+  }
+  
+  .btn-secondary {
+    @apply bg-brown-100 text-brown-900 hover:bg-brown-200;
+  }
+  
+  .nav-link {
+    @apply text-brown-100 hover:text-white transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-200;
+  }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Background Gradients */
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, var(--brown-50), var(--brown-100));
+}
+
+.bg-gradient-chocolate {
+  background: linear-gradient(135deg, #43302b 0%, #846358 100%);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, #fdf8f6 0%, #f2e8e5 100%);
+}
