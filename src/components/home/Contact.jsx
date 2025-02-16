@@ -62,15 +62,11 @@ function Contact() {
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-4">Contact Information</h3>
               <div className="space-y-4">
-                <p className="flex items-center text-brown-600">
-                  <span className="mr-2">📍</span> 123 Chocolate Avenue, Sweet City
-                </p>
+                
                 <p className="flex items-center text-brown-600">
                   <span className="mr-2">📧</span> hello@kastola.com
                 </p>
-                <p className="flex items-center text-brown-600">
-                  <span className="mr-2">📞</span> (555) 123-4567
-                </p>
+              
               </div>
             </div>
           </motion.div>

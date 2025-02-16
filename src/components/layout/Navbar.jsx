@@ -32,10 +32,7 @@ function Navbar() {
                   {item.label}
                 </a>
               ))}
-              <button className="bg-[#f5e6d3] text-[#2c1810] px-6 py-2 rounded-full hover:bg-amber-200 transition-colors">
-                <FaShoppingCart className="inline-block mr-2" />
-                Cart (0)
-              </button>
+            
             </div>
 
             {/* Mobile Menu Button */}

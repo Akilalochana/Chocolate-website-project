@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaHeart } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-brown-950 text-white">
+    <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -29,9 +29,7 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2 text-brown-100">
-              <li>123 Chocolate Avenue</li>
-              <li>Sweet City, SC 12345</li>
-              <li>Phone: (555) 123-4567</li>
+          
               <li>Email: hello@kastola.com</li>
             </ul>
           </div>
