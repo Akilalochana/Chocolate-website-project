@@ -14,14 +14,17 @@ function Navbar() {
   return (
     <nav className="fixed w-full z-50 bg-[#2A1810]">
       <div className="container mx-auto px-6 border-0 m-0">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <a 
             href="#home" 
             className="text-2xl font-bold text-amber-100 hover:text-amber-200 transition-colors"
             aria-label="Kastola - Home"
           >
-            Kastola
+            <div 
+           className="absolute bg-cover bg-center w-[87px] h-[87px] top-[8px] rounded-full" 
+           style={{ backgroundImage: `url('/images/logo.png')` }}
+        />
           </a>
 
           {/* Desktop Navigation */}
