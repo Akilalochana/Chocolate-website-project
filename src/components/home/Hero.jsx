@@ -11,7 +11,7 @@ function Hero() {
         {/* Main background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center" 
-          style={{ backgroundImage: `url('/images/wheat.png')` }}
+
         />
         
         {/* Gradient overlay - adjusted for better visibility with your image */}

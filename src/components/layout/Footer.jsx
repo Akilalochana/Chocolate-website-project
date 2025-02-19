@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaHeart } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#2A1810] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand Section */}
