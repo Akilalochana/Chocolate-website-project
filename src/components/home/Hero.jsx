@@ -5,7 +5,7 @@ import Button from '../shared/Button';
 
 function Hero() {
   return (
-    <section id="home" className="h-screen relative overflow-hidden">
+    <section id="home" className="h-screen relative overflow-hidden -mt-8">
       {/* Background layers */}
       <div className="absolute inset-0 z-0">
         {/* Main background image */}
