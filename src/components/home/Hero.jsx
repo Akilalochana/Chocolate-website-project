@@ -8,6 +8,11 @@ function Hero() {
     <section id="home" className="h-screen relative overflow-hidden -mt-8">
       {/* Background layers */}
       <div className="absolute inset-0 z-0">
+
+      <div 
+          className="absolute inset-0 bg-cover bg-center" 
+          style={{ backgroundImage: `url('/images/Untitled design.png')` }}
+        />
         {/* Main background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center" 
@@ -16,6 +21,7 @@ function Hero() {
         
         {/* Gradient overlay - adjusted for better visibility with your image */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-brown-900/60 to-brown-800/20" />
+
        
       </div>
 
